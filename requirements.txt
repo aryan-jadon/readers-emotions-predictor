@@ -1,0 +1,123 @@
+amqp==2.5.2
+appnope==0.1.0
+argon2-cffi @ file:///opt/concourse/worker/volumes/live/4afd07c8-7fc3-4a09-6326-d8c70269eb33/volume/argon2-cffi_1613037490059/work
+async-generator==1.10
+attrs==19.3.0
+backcall==0.1.0
+billiard @ file:///opt/concourse/worker/volumes/live/d17d8cb6-7c17-40d8-67e8-590d7d53c576/volume/billiard_1614257685351/work
+bleach @ file:///tmp/build/80754af9/bleach_1628110601003/work
+blinker==1.4
+blis==0.2.4
+bson==0.5.8
+celery==4.4.2
+certifi==2019.11.28
+cffi @ file:///opt/concourse/worker/volumes/live/4a8f7628-1917-402a-5a6a-cdafcc3ec547/volume/cffi_1625814707380/work
+chardet @ file:///opt/concourse/worker/volumes/live/92aa0fea-cec8-43da-4d77-2574e78c5981/volume/chardet_1605303181342/work
+colorama @ file:///home/ktietz/src/ci/colorama_1611926383524/work
+ConfigArgParse==1.1
+cryptography @ file:///opt/concourse/worker/volumes/live/cdf8ff17-b0bf-4081-524c-b5a0afe929ba/volume/cryptography_1616769280208/work
+cymem==2.0.3
+dataclasses==0.6
+decorator @ file:///home/ktietz/src/ci/decorator_1611930055503/work
+defusedxml @ file:///home/ktietz/src/ci_mi/defusedxml_1612808095953/work
+Django==2.2.8
+django-allauth==0.41.0
+django-ckeditor==5.9.0
+django-filebrowser-no-grappelli==3.8.0
+django-js-asset==1.2.2
+django-social-share==1.4.0
+django-taggit==1.2.0
+django-tinymce==3.0.1
+djongo==1.3.1
+entrypoints==0.3
+idna==2.9
+importlib-metadata==1.6.0
+ipykernel==5.1.4
+ipython==7.13.0
+ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+ipywidgets @ file:///tmp/build/80754af9/ipywidgets_1601490159889/work
+jedi==0.16.0
+Jinja2==2.11.1
+joblib==0.14.1
+jsonschema @ file:///Users/ktietz/demo/mc3/conda-bld/jsonschema_1630511932244/work
+jupyter==1.0.0
+jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1630690655192/work
+jupyter-console @ file:///tmp/build/80754af9/jupyter_console_1616615302928/work
+jupyter-core @ file:///opt/concourse/worker/volumes/live/a699b83f-e941-4170-5136-bf87e3f37756/volume/jupyter_core_1612213304212/work
+jupyterlab-pygments @ file:///tmp/build/80754af9/jupyterlab_pygments_1601490720602/work
+kombu==4.6.8
+mailchimp3==3.0.13
+MarkupSafe==1.1.1
+matplotlib-inline @ file:///tmp/build/80754af9/matplotlib-inline_1628242447089/work
+mistune==0.8.4
+mkl-fft==1.3.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+mongoengine==0.19.1
+murmurhash==1.0.2
+nbclient @ file:///tmp/build/80754af9/nbclient_1614364831625/work
+nbconvert==5.6.1
+nbformat==5.0.4
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1613680548246/work
+networkx @ file:///tmp/build/80754af9/networkx_1594377231366/work
+nltk==3.4.5
+notebook==6.0.3
+numpy==1.18.2
+oauthlib==3.1.0
+packaging @ file:///tmp/build/80754af9/packaging_1625611678980/work
+pandas==1.0.1
+pandocfilters==1.4.2
+parso==0.6.2
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==7.1.1
+plac @ file:///tmp/build/80754af9/plac_1608319346096/work
+preshed==2.0.1
+prometheus-client @ file:///tmp/build/80754af9/prometheus_client_1623189609245/work
+prompt-toolkit==3.0.4
+ptyprocess==0.6.0
+pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+Pygments==2.5.2
+PyJWT==1.7.1
+pyLanguagetool==0.9.0
+pymongo==3.10.1
+pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1608057966937/work
+pyparsing @ file:///home/linux1/recipes/ci/pyparsing_1610983426697/work
+pyrsistent==0.15.7
+PySocks @ file:///opt/concourse/worker/volumes/live/ef943889-94fc-4539-798d-461c60b77804/volume/pysocks_1605305801690/work
+pyspellchecker==0.5.4
+python-dateutil @ file:///home/ktietz/src/ci/python-dateutil_1611928101742/work
+python-decouple==3.3
+python3-openid @ file:///opt/concourse/worker/volumes/live/0f95b3ef-437b-4020-7417-51c1a3e2d937/volume/python3-openid_1614085609921/work
+pytz==2019.3
+pyzmq @ file:///opt/concourse/worker/volumes/live/4e55a046-5b01-4947-5877-1affb3793a28/volume/pyzmq_1628276012891/work
+qtconsole==4.7.1
+QtPy @ file:///Users/ktietz/demo/mc3/conda-bld/qtpy_1630512172840/work
+requests==2.23.0
+requests-oauthlib==1.3.0
+scikit-learn==0.22.1
+scipy==1.4.1
+Send2Trash @ file:///tmp/build/80754af9/send2trash_1607525499227/work
+six @ file:///opt/concourse/worker/volumes/live/991394d8-4a65-4a3d-5b4a-3240dd8064c4/volume/six_1605201640539/work
+social-auth-app-django==3.1.0
+social-auth-app-django-mongoengine==1.0.0
+social-auth-core==3.2.0
+social-auth-storage-mongoengine==1.0.1
+spacy==2.1.9
+sqlparse==0.2.4
+srsly==1.0.2
+stripe==2.15.0
+terminado==0.8.3
+testpath @ file:///home/ktietz/src/ci/testpath_1611930608132/work
+thinc==7.0.8
+tornado==6.0.4
+tqdm==4.43.0
+traitlets==4.3.3
+typing-extensions @ file:///Users/ktietz/demo/mc3/conda-bld/typing_extensions_1629887998905/work
+urllib3==1.25.8
+vine @ file:///Users/ktietz/demo/mc3/conda-bld/vine_1629368111964/work
+wasabi==0.6.0
+wcwidth==0.1.8
+webencodings==0.5.1
+widgetsnbextension==3.5.1
+zipp==3.1.0
