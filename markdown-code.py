@@ -1,5 +1,5 @@
 from __future__ import print_function, division, unicode_literals
-from Module_Files import example_helper
+from module_files import example_helper
 import json
 from nltk.tokenize import sent_tokenize
 from tqdm import tqdm
@@ -11,6 +11,8 @@ from torchmoji.sentence_tokenizer import SentenceTokenizer
 from torchmoji.model_def import torchmoji_emojis
 from torchmoji.global_variables import PRETRAINED_PATH, VOCAB_PATH
 import docx
+from docx import Document
+from docx.shared import Inches
 import warnings
 from mdutils.mdutils import MdUtils
 from mdutils import Html
@@ -73,10 +75,6 @@ def get_reactions(vocabulary, predict_text, reactionTracker):
 def make_report(book_path):
     doc = docx.Document(book_path)
     reactionTracker = {}
-
-    from docx import Document
-    from docx.shared import Inches
-
     name = book_path.split('/')[-1].split('.docx')[0]
     temp_title_path = name
 
@@ -84,10 +82,10 @@ def make_report(book_path):
     novel_title = novel_title.replace('-', ' ')
     complete_novel_title = "Analysis of Book - " + str(novel_title.capitalize())
 
-    mdFile = MdUtils(file_name=str("Markdowns/")+str(temp_title_path), title=complete_novel_title)
+    mdFile = MdUtils(file_name=str("results/")+str(temp_title_path), title=complete_novel_title)
 
     # Adding Image
-    path = "../Images/Image-4.jpg"
+    path = "../images/image-4.jpg"
     mdFile.new_paragraph(Html.image(path=path, size='800x800', align='center'))
     mdFile.new_paragraph("<div style='page-break-after: always;'> </div>")
 
@@ -96,7 +94,7 @@ def make_report(book_path):
             checktext = para.text.strip()
             checktext = checktext.replace(" ", "")
 
-            if checktext.isnumeric() == False:
+            if not checktext.isnumeric():
                 try:
                     tempText = para.text
                     tempText += os.linesep
@@ -122,7 +120,8 @@ def make_report(book_path):
 
     from collections import OrderedDict
 
-    reactions_sorted_by_value = OrderedDict(sorted(reactionTracker.items(), key=lambda x: x[1], reverse=True))
+    reactions_sorted_by_value = OrderedDict(sorted(reactionTracker.items(),
+                                                   key=lambda x: x[1], reverse=True))
     reactions_icon = []
     reactions_count = []
 
@@ -136,16 +135,15 @@ def make_report(book_path):
         list_of_strings.extend([str(reactions_icon[row]), str(reactions_count[row])])
 
     mdFile.new_table(columns=2, rows=len(reactions_count)+1, text=list_of_strings, text_align='center')
-
     mdFile.create_md_file()
 
 
-booksList = os.listdir('Completed/')
+booksList = os.listdir('results/')
 
 for book_path in tqdm(range(len(booksList))):
     path = "Completed/"+str(booksList[book_path])
     try:
         print("Working on " + str(booksList[book_path]))
         make_report(path)
-    except:
-        pass
+    except Exception as e:
+        print(e)
